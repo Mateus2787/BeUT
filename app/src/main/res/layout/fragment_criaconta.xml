@@ -11,16 +11,6 @@
     android:paddingBottom="@dimen/fragment_vertical_margin"
     tools:context=".ui.login.Criaconta">
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="95dp"
-        android:layout_height="63dp"
-        android:text="Be-UT"
-        android:textColor="@color/white"
-        android:textSize="@dimen/list_item_spacing"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="4dp" />
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
@@ -174,4 +164,12 @@
         android:inputType="date"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="165dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="265dp"
+        android:layout_height="111dp"
+        android:src="@drawable/beutsemcirculo"
+        tools:layout_editor_absoluteX="-60dp"
+        tools:layout_editor_absoluteY="-29dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

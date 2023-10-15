@@ -3,25 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/loginFragment3">
+    app:startDestination="@id/loginFragment">
 
-    <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.example.myapplication.ui.login.LoginFragment"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
-        <action
-            android:id="@+id/action_loginFragment_to_criaconta"
-            app:destination="@id/criaconta" />
-    </fragment>
     <fragment
         android:id="@+id/criaconta"
         android:name="com.example.myapplication.ui.login.Criaconta"
         android:label="fragment_criaconta"
         tools:layout="@layout/fragment_criaconta" />
     <fragment
-        android:id="@+id/loginFragment3"
+        android:id="@+id/loginFragment"
         android:name="com.example.myapplication.ui.login.LoginFragment"
-        android:label="fragment_login3"
-        tools:layout="@layout/fragment_login3" />
+        android:label="activity_main"
+        tools:layout="@layout/activity_main">
+        <action
+            android:id="@+id/action_loginFragment_to_criaconta"
+            app:destination="@id/criaconta" />
+        <deepLink
+            android:id="@+id/deepLink"
+            app:action="C:\Users\mateu\AndroidStudioProjects\MyApplication2\app\src\main\res\layout\tela_inicial.xml" />
+    </fragment>
 </navigation>

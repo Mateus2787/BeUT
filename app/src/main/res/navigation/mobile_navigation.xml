@@ -22,4 +22,8 @@
             android:id="@+id/deepLink"
             app:action="C:\Users\mateu\AndroidStudioProjects\MyApplication2\app\src\main\res\layout\tela_inicial.xml" />
     </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.myapplication.MainActivity"
+        android:label="MainActivity" />
 </navigation>
